@@ -11,7 +11,7 @@ Use this file as the durable entry point for a project.
 
 ## 2. Current phase
 
-- Phase:
+- Phase / gate:
 - Current milestone:
 - Next decision point:
 - Target date / window:
@@ -22,10 +22,18 @@ Use this file as the durable entry point for a project.
 - Software / firmware:
 - Toolchain:
 - Configuration:
-- Verified behavior:
+- Legacy/system behavior already proven:
+- Current implementation behavior proven:
 - Evidence links:
 
-## 4. Change set
+## 4. Critical truth table
+
+| Item / interface | Claim | Provenance | Epistemic status | Current validation | Evidence / owner |
+|---|---|---|---|---|---|
+
+Suggested provenance: `LEGACY-PROVEN`, `DOC`, `CODE`, `MEASURED`, `INFERRED`, `UNKNOWN`.
+
+## 5. Change set
 
 ### Unchanged
 
@@ -35,20 +43,22 @@ Use this file as the durable entry point for a project.
 
 - ...
 
-## 5. Source-of-truth map
+## 6. Source-of-truth map
 
 | Information class | Authoritative location | Owner / source | Revision rule |
 |---|---|---|---|
 | Requirements | | | |
 | Architecture | | | |
+| Hardware / interface truth | | | |
 | Configuration | | | |
 | Release identity | | | |
 | Status / milestones | | | |
 | Risks / assumptions | | | |
-| Validation evidence | | | |
+| Validation conclusions | | | |
+| Raw evidence archive | | | |
 | ADRs | | | |
 
-## 6. Identity / namespace contracts
+## 7. Identity / namespace contracts
 
 Document any cross-system mapping that could be confused.
 
@@ -56,32 +66,37 @@ Document any cross-system mapping that could be confused.
 source namespace -> stable identity -> target namespace
 ```
 
-## 7. Architecture and critical paths
+## 8. Architecture and critical paths
 
 - Critical path:
 - Replaceable modules:
 - External dependencies:
 - Failure boundaries:
 
-## 8. Risks and assumptions
+## 9. Risks and assumptions
 
 | ID | Type | Statement | Evidence | Impact | Mitigation / discriminating action | Status |
 |---|---|---|---|---|---|---|
 
-## 9. Validation gates
+## 10. Resource / safety budgets
+
+| Budget | Baseline | Target | Warning | Hard limit | Measurement method |
+|---|---|---|---|---|---|
+
+## 11. Validation gates
 
 | Gate | Capability | Preconditions | Acceptance criteria | Evidence | Status |
 |---|---|---|---|---|---|
 
-## 10. Decisions
+## 12. Decisions
 
 Link project ADRs here.
 
-## 11. Current limitations
+## 13. Current limitations
 
 Explicitly state what validated results do **not** establish.
 
-## 12. Evidence archive
+## 14. Evidence archive
 
 - Logs:
 - Measurements:
@@ -89,6 +104,13 @@ Explicitly state what validated results do **not** establish.
 - Reports:
 - Build artifacts:
 
-## 13. Retrospectives / case-study candidates
+## 15. Human / AI execution boundary
+
+- AI may:
+- Human approval required for:
+- Physical operations owned by:
+- Release / supplier / production decisions owned by:
+
+## 16. Retrospectives / case-study candidates
 
 Record expensive failures, difficult trade-offs, or reusable lessons that may deserve promotion into the cross-project framework.

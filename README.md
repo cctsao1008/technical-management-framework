@@ -21,12 +21,12 @@ The framework covers:
 
 ```text
 principles/       Fundamental rules for evidence, identity, baselines and decisions
-planning/         Project framing, milestones, prioritization and risk planning
-governance/       Source of truth, ADRs, change control and review rules
-execution/        Diagnostics, migration/porting, validation and test acceptance
+planning/         Project framing, baselines, rebaseline gates, milestones and risk planning
+governance/       Source of truth, evidence chains, ADRs, change control and review rules
+execution/        Diagnostics, change integrity, resource budgets, validation and test acceptance
 knowledge/        Evidence management, project-local truth and retrospectives
 ai-collaboration/ AI reasoning, provenance, assumption reset and approval boundaries
-templates/        Reusable project, ADR, postmortem and evidence templates
+templates/        Reusable project, ADR, rebaseline, validation, postmortem and evidence templates
 case-studies/     Real projects converted into reusable organizational learning
 ```
 
@@ -35,6 +35,7 @@ case-studies/     Real projects converted into reusable organizational learning
 ```text
 Project intent
     -> framing and constraints
+    -> baseline / rebaseline
     -> plan and milestones
     -> governed decisions
     -> execution and evidence
@@ -70,17 +71,25 @@ A framework rule must not silently replace project-local truth. A project may sp
 1. [`principles/evidence_and_truth.md`](principles/evidence_and_truth.md)
 2. [`principles/identity_and_namespace.md`](principles/identity_and_namespace.md)
 3. [`planning/known_good_baseline.md`](planning/known_good_baseline.md)
-4. [`execution/diagnostic_design.md`](execution/diagnostic_design.md)
-5. [`execution/test_acceptance.md`](execution/test_acceptance.md)
-6. [`ai-collaboration/protocol.md`](ai-collaboration/protocol.md)
-7. [`templates/project_local_truth.md`](templates/project_local_truth.md)
+4. [`planning/rebaseline_gate.md`](planning/rebaseline_gate.md)
+5. [`governance/source_of_truth.md`](governance/source_of_truth.md)
+6. [`governance/evidence_chain.md`](governance/evidence_chain.md)
+7. [`execution/diagnostic_design.md`](execution/diagnostic_design.md)
+8. [`execution/test_acceptance.md`](execution/test_acceptance.md)
+9. [`execution/change_integrity.md`](execution/change_integrity.md)
+10. [`execution/resource_budgets.md`](execution/resource_budgets.md)
+11. [`ai-collaboration/protocol.md`](ai-collaboration/protocol.md)
+12. [`templates/project_local_truth.md`](templates/project_local_truth.md)
+13. [`templates/rebaseline_checklist.md`](templates/rebaseline_checklist.md)
+14. [`templates/validation_record.md`](templates/validation_record.md)
 
 ## Case studies
 
 Case studies preserve expensive failures and difficult decisions without turning project-specific details into universal rules.
 
 - Case Study 001: Pi86-RP2350 host-mapping failure and recovery — initial source project: `cctsao1008/pi86-rp2350`.
+- Case Study 002: Restarting a known embedded system with AI — rebaseline, evidence-chain, safety-state, performance-budget, and repository-integrity lessons.
 
 ## Status
 
-Initial framework extracted from lessons learned during cross-platform firmware, hardware bring-up, migration, project governance, and AI-assisted engineering work. The framework is expected to evolve as additional projects contribute validated lessons.
+The framework is evidence-driven and intentionally revisable. Projects do not merely conform to the framework: project evidence is expected to expose gaps, refine rules, and create new reusable templates and case studies.

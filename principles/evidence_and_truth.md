@@ -16,7 +16,7 @@ Technical management fails when observations, documents, assumptions, and decisi
 
 A lower-priority source must not silently override higher-priority evidence.
 
-## Required claim labels
+## Required epistemic labels
 
 Use these labels when ambiguity matters:
 
@@ -26,6 +26,41 @@ Use these labels when ambiguity matters:
 - **DECISION** — chosen action, rule, architecture, or management direction.
 - **INVALIDATED** — previously plausible interpretation rejected by later evidence.
 - **SUPERSEDED** — historically valid or previously used material that is no longer current.
+
+## Provenance is a separate dimension
+
+Epistemic status answers "what kind of claim is this?" Provenance answers "where did it come from and in what scope?"
+
+Useful provenance labels include:
+
+- `MEASURED` — observed on the current target/specimen/environment;
+- `LEGACY-PROVEN` — demonstrated by a previous known-good system;
+- `DOC` — supported by authoritative documentation;
+- `CODE` — encoded by an implementation or executable configuration;
+- `INFERRED` — derived from other evidence;
+- `UNKNOWN` — unresolved source/validity.
+
+Examples:
+
+```text
+FACT + DOC
+FACT + MEASURED
+FACT + LEGACY-PROVEN
+INFERENCE + DOC/CODE inputs
+HYPOTHESIS + UNKNOWN target behavior
+```
+
+Do not silently promote `INFERRED` or `LEGACY-PROVEN` into `MEASURED` current-target truth.
+
+## Scope rule
+
+Every important claim should have enough scope to prevent accidental overreach:
+
+```text
+target / specimen / environment / revision / mode / time
+```
+
+A true claim outside the current scope can still be the wrong basis for a decision.
 
 ## Conflict handling
 
