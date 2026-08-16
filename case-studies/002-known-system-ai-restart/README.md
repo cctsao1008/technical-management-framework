@@ -1,4 +1,11 @@
-# Case Study 002 — Restarting a Known Embedded System with AI
+# Case Study 002 — Inverted Pendulum: Restarting a Known Embedded System with AI
+
+## Source project
+
+- `cctsao1008/inverted-pendulum`
+- https://github.com/cctsao1008/inverted-pendulum
+
+This case study was extracted from the inverted-pendulum project. Project-specific hardware mappings, measurements, firmware parameters, issue IDs, exact commits, and raw logs remain in that source repository and its evidence archive. This case deliberately retains only the reusable lessons.
 
 ## Why this case matters
 
@@ -109,7 +116,3 @@ This sequence is illustrative; projects should adapt gate names and count to the
 ## Risk of over-generalization
 
 Not every project needs a formal Gate 0 or detailed provenance table. Small greenfield software-only work may use a lighter process. The method becomes valuable when legacy evidence, hardware, suppliers, safety, real-time constraints, or multiple sources of truth create meaningful ambiguity or consequence.
-
-## Source project
-
-Project-specific hardware mappings, measurements, firmware parameters, issue IDs, exact commits, and raw logs remain in the source project's repository/evidence archive. This case deliberately retains only the reusable lessons.

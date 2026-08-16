@@ -88,7 +88,7 @@ A framework rule must not silently replace project-local truth. A project may sp
 Case studies preserve expensive failures and difficult decisions without turning project-specific details into universal rules.
 
 - Case Study 001: Pi86-RP2350 host-mapping failure and recovery — initial source project: `cctsao1008/pi86-rp2350`.
-- Case Study 002: Restarting a known embedded system with AI — rebaseline, evidence-chain, safety-state, performance-budget, and repository-integrity lessons.
+- Case Study 002: Inverted Pendulum — restarting a known embedded system with AI; source project: `cctsao1008/inverted-pendulum`.
 
 ## Status
 
