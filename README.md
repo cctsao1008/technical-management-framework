@@ -1,10 +1,10 @@
-# Technical Management Framework
+# 🧭 Technical Management Framework
 
 A reusable framework for technical planning, project governance, engineering execution, evidence-based decision making, knowledge management, and AI-assisted collaboration across projects.
 
 This repository is deliberately **project-agnostic**. Project-specific truth remains in each project repository; this repository defines the reusable management and execution framework shared across projects.
 
-## Scope
+## 🎯 Scope
 
 The framework covers:
 
@@ -17,7 +17,7 @@ The framework covers:
 - retrospectives and continuous improvement;
 - AI-assisted technical collaboration.
 
-## Structure
+## 🗂️ Structure
 
 ```text
 principles/       Fundamental rules for evidence, identity, baselines and decisions
@@ -30,7 +30,7 @@ templates/        Reusable project, ADR, rebaseline, validation, postmortem and 
 case-studies/     Real projects converted into reusable organizational learning
 ```
 
-## Core model
+## 🔄 Core model
 
 ```text
 Project intent
@@ -44,9 +44,9 @@ Project intent
     -> reusable learning
 ```
 
-## Separation of responsibilities
+## 🧩 Separation of responsibilities
 
-### This repository owns
+### 🧰 This repository owns
 
 - reusable principles;
 - reusable processes;
@@ -54,7 +54,7 @@ Project intent
 - cross-project terminology;
 - generalized lessons and case studies.
 
-### Individual project repositories own
+### 📍 Individual project repositories own
 
 - current architecture;
 - project-specific requirements;
@@ -66,7 +66,7 @@ Project intent
 
 A framework rule must not silently replace project-local truth. A project may specialize a framework rule when the reason is explicit and recorded.
 
-## Recommended starting points
+## 🚦 Recommended starting points
 
 1. [`principles/evidence_and_truth.md`](principles/evidence_and_truth.md)
 2. [`principles/identity_and_namespace.md`](principles/identity_and_namespace.md)
@@ -83,13 +83,13 @@ A framework rule must not silently replace project-local truth. A project may sp
 13. [`templates/rebaseline_checklist.md`](templates/rebaseline_checklist.md)
 14. [`templates/validation_record.md`](templates/validation_record.md)
 
-## Case studies
+## 🧪 Case studies
 
 Case studies preserve expensive failures and difficult decisions without turning project-specific details into universal rules.
 
 - Case Study 001: Pi86-RP2350 host-mapping failure and recovery — initial source project: `cctsao1008/pi86-rp2350`.
 - Case Study 002: Inverted Pendulum — restarting a known embedded system with AI; source project: `cctsao1008/inverted-pendulum`.
 
-## Status
+## 🌱 Status
 
 The framework is evidence-driven and intentionally revisable. Projects do not merely conform to the framework: project evidence is expected to expose gaps, refine rules, and create new reusable templates and case studies.
