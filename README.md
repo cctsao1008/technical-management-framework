@@ -89,7 +89,3 @@ Case studies preserve expensive failures and difficult decisions without turning
 
 - Case Study 001: Pi86-RP2350 host-mapping failure and recovery — initial source project: `cctsao1008/pi86-rp2350`.
 - Case Study 002: Inverted Pendulum — restarting a known embedded system with AI; source project: `cctsao1008/inverted-pendulum`.
-
-## 🌱 Status
-
-The framework is evidence-driven and intentionally revisable. Projects do not merely conform to the framework: project evidence is expected to expose gaps, refine rules, and create new reusable templates and case studies.
